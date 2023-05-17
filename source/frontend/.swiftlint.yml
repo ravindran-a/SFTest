@@ -1,0 +1,161 @@
+excluded:
+  - Pods
+
+included:
+  - SFTest
+
+disabled_rules: # rule identifiers to exclude from running
+  - trailing_whitespace
+  - conditional_returns_on_newline
+  - nesting
+  - comment_spacing
+
+opt_in_rules:
+  - closure_spacing
+  - explicit_init
+  - redundant_nil_coalescing
+  - nimble_operator
+  - closure_end_indentation
+  - first_where
+  - contains_over_first_not_nil
+  - empty_string
+  - fatal_error_message
+  - empty_count
+  - sorted_first_last
+  - toggle_bool
+  - modifier_order
+  - empty_collection_literal
+  - last_where
+  - reduce_into
+  - flatmap_over_map_reduce
+  - contains_over_filter_count
+  - contains_over_filter_is_empty
+  - contains_over_range_nil_comparison
+  - vertical_whitespace
+  - convenience_type
+  - file_name
+  - explicit_type_interface
+  - array_init
+  - attributes
+  - block_based_kvo
+  - class_delegate_protocol
+  - closing_brace
+  - closure_parameter_position
+  - colon
+  - comma
+  - compiler_protocol_init
+  - control_statement
+  - discarded_notification_center_observer
+  - discouraged_direct_init
+  - discouraged_optional_boolean
+  - duplicate_imports
+  - dynamic_inline
+  - empty_enum_arguments
+  - empty_parameters
+  - empty_parentheses_with_trailing_closure
+  - fallthrough
+  - for_where
+  - force_cast
+  - force_try
+  - force_unwrapping
+  - implicit_getter
+  - implicitly_unwrapped_optional
+  - is_disjoint
+  - joined_default_parameter
+  - leading_whitespace
+  - legacy_cggeometry_functions
+  - legacy_constant
+  - legacy_constructor
+  - legacy_hashing
+  - legacy_nsgeometry_functions
+  - lower_acl_than_parent
+  - mark
+  - multiline_parameters
+  - multiple_closures_with_trailing_closure
+  - no_space_in_method_call
+  - notification_center_detachment
+  - opening_brace
+  - operator_usage_whitespace
+  - operator_whitespace
+  - overridden_super_call
+  - override_in_extension
+  - pattern_matching_keywords
+  - private_action
+  - private_outlet
+  - private_over_fileprivate
+  - private_unit_test
+  - prohibited_super_call
+  - protocol_property_accessors_order
+  - redundant_discardable_let
+  - redundant_objc_attribute
+  - redundant_optional_initialization
+  - redundant_void_return
+  - required_enum_case
+  - return_arrow_whitespace
+  - shorthand_operator
+  - single_test_class
+  - statement_position
+  - superfluous_disable_command
+  - switch_case_alignment
+  - syntactic_sugar
+  - trailing_comma
+  - trailing_newline
+  - trailing_semicolon
+  - unneeded_break_in_switch
+  - unused_control_flow_label
+  - unused_closure_parameter
+  - unused_enumerated
+  - unused_optional_binding
+  - unused_setter_value
+  - valid_ibinspectable
+  - vertical_parameter_alignment
+  - vertical_parameter_alignment_on_call
+  - void_return
+  - weak_delegate
+  - xctfail_message
+  - yoda_condition
+  - reduce_boolean
+  - nsobject_prefer_isequal
+  - unowned_variable_capture
+  - duplicate_enum_cases
+  - legacy_multiple
+
+attributes:
+  always_on_same_line: ["@IBAction", "@IBSegueAction", "@NSManaged", "@discardableResult", "@escaping", "@objc"]
+
+# rule parameters
+file_length:
+  - 800 #warning
+  - 1000 #error
+function_body_length:
+  - 80 #warning
+  - 120 #error
+line_length:
+  - 300 #warning
+  - 350 #error
+type_body_length:
+  - 400 #warning
+  - 500 #error
+large_tuple:
+  - 6 #warning
+  - 8 #error
+type_name:
+  max_length:
+    - 60 #warning
+    - 80 #error
+identifier_name:
+  max_length:
+    - 60 #warning
+    - 80 #error
+  excluded: # excluded via string array
+    - id
+    - op
+    - am
+    - pm
+cyclomatic_complexity:
+  ignores_case_statements: true
+  warning: 15
+function_parameter_count:
+  ignores_default_parameters: true
+  warning: 8
+  error: 10
